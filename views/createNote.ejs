@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="note-container">
+            <h1>Add a new note</h1>
+            <form action="/notes" method="POST"> 
+                <label for="title">Title:</label>
+                <input class="title-input" name="title" type="text">
+                <label for="contents">Content:</label>
+                <textarea class="content-input" name="contents"></textarea>
+                <button class="add-button" type="submit" value="Submit">Add note</button>
+            </form>
+            <form action="/" method="GET">
+                <button class="back-button" type="submit" value="Submit">Go back</button>
+            </form>
+        </div>
+    </div>
+</body>

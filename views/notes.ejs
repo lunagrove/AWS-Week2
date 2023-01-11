@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body>
+       <div class="wrapper">
+              <h1>Notes</h1>
+
+              <form action="/createNote" method="GET"> 
+                     <button class="create-button" type="submit" value="Submit">Add new note</button>
+              </form>
+
+              <% for (let i = 0; i < notes.length; i++) { %>
+                     <div class="note-container">
+                            <h4><%=`${notes[i].title}`%></h4>
+                            <p class="note-content"><%=`${notes[i].contents}`%></p>
+                            <div class="action-forms">
+                                   <form action="/notes/<%=notes[i].id%>/delete" method="POST">
+                                          <button class="delete-button" type="submit">Delete note</button>
+                                   </form>
+                                   <form action="/notes/<%=notes[i].id%>" method="GET">
+                                          <button type="submit">Note details</button>
+                                   </form>
+                            </div>
+                            <hr class="note-separator">
+                     </div>
+              <% } %>
+              
+       </div>
+</body>
+</html>
+
+

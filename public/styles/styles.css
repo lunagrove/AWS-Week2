@@ -1,0 +1,75 @@
+h1 {
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 5px;
+}
+
+button {
+    border-radius: 5px;
+    height: 30px;
+}
+
+.wrapper {
+    border: 1px solid black;
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+}
+
+.note-container {
+    margin-bottom: 20px;
+}
+
+.note-separator {
+    width: 75%;
+    text-align:center;
+    border: 1px dotted gray;
+    border-style: none none dotted; 
+    margin-top: 20px; 
+}
+
+.note-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.create-button, .add-button {
+    background-color: lightgreen;
+}
+
+.action-forms {
+    display: flex;
+}
+
+.delete-button {
+    background-color: red;
+    margin-right: 20px;
+}
+
+.title-input {
+    display: block;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.content-input {
+    display: block;
+    width: 600px;
+    height: 200px;
+    text-align: top;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.back-button, .add-button {
+    margin-top: 20px;
+}
